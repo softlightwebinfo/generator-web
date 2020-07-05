@@ -4,8 +4,7 @@ services:
     expose:
       - 6379
     ports:
-      - "63791:6379"
-    container_name: storeCache
+      - "63792:6379"
     image: "redis:alpine"
   db:
     image: postgres
@@ -13,10 +12,18 @@ services:
     environment:
       POSTGRES_PASSWORD: mypassword
     volumes:
-      - ./postgres-data:/var/lib/postgresql/data
+      - postgres-data:/var/lib/postgresql/data
     ports:
-      - 5433:5432
-    container_name: storeDB
+      - 5440:5432
+  my-mongoDB:
+    image: mongo:latest
+    volumes:
+      - db-data:/data/db
+      - mongo-config:/data/configdb
+volumes:
+  db-data:
+  mongo-config:
+  postgres-data:
       #  nginx:
 #    image: nginx
 #    ports:

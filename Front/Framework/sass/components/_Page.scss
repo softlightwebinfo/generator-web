@@ -1,8 +1,11 @@
 .Page {
-  height: 100%;
   display: flex;
+  height: calc(100vh - 120px);
+  overflow: auto;
 
   > .Card-component {
     width: 100%;
+    overflow: auto;
+    height: 100%;
   }
 }

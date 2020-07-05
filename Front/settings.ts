@@ -1,24 +1,20 @@
 import {MenuModel} from "./MenuModel";
 
 export const settingsMenu = [
-    new MenuModel("Header", "menu"),
-    new MenuModel("Text", "menu"),
-    new MenuModel("Container", "menu"),
-    new MenuModel("Grid", "menu"),
-    new MenuModel("Ads", "menu"),
-    new MenuModel("Title", "menu"),
-    new MenuModel("Card", "menu"),
-    new MenuModel("List", "menu"),
+    new MenuModel("Header", "menu", "header"),
+    new MenuModel("Text", "menu", "text"),
+    new MenuModel("Container", "menu", "container"),
+    new MenuModel("Grid", "menu", "grid"),
+    new MenuModel("Ads", "menu", "ads"),
+    new MenuModel("Title", "menu", "title"),
+    new MenuModel("Card", "menu", "card"),
+    new MenuModel("List", "menu", "list"),
 ];
 export const settingsMenuLayouts = [
-    new MenuModel("Form", "menu"),
-    new MenuModel("Aside", "menu"),
-    new MenuModel("Dashboard", "menu"),
-    new MenuModel("Carousel", "menu"),
-    new MenuModel("Ads", "menu"),
-    new MenuModel("Title", "menu"),
-    new MenuModel("Card", "menu"),
-    new MenuModel("List", "menu"),
+    new MenuModel("Form", "menu","form"),
+    new MenuModel("Aside", "menu","aside"),
+    new MenuModel("Dashboard", "menu","dashboard"),
+    new MenuModel("Carousel", "menu","carousel"),
 ];
 
 export const API = "http://localhost:3000/api";

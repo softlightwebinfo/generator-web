@@ -1,6 +1,15 @@
 export class MenuModel {
+    get key(): string {
+        return this._key;
+    }
+
+    set key(value: string) {
+        this._key = value;
+    }
+
     private _icon: any;
     private _name: string;
+    private _key: string;
 
     get icon(): any {
         return this._icon;
@@ -18,8 +27,9 @@ export class MenuModel {
         this._name = value;
     }
 
-    constructor(name: string, icon: any) {
+    constructor(name: string, icon: any, key: string) {
         this._name = name;
         this._icon = icon;
+        this._key = key;
     }
 }

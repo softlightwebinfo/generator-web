@@ -451,7 +451,10 @@ body {
   cursor: pointer; }
 
 .Page {
-  height: 100%;
-  display: flex; }
+  display: flex;
+  height: calc(100vh - 120px);
+  overflow: auto; }
   .Page > .Card-component {
-    width: 100%; }
+    width: 100%;
+    overflow: auto;
+    height: 100%; }
