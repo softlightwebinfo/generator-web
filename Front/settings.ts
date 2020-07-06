@@ -1,20 +1,21 @@
-import {MenuModel} from "./MenuModel";
+import {MenuGeneratorModel} from "./MenuGeneratorModel";
 
 export const settingsMenu = [
-    new MenuModel("Header", "menu", "header"),
-    new MenuModel("Text", "menu", "text"),
-    new MenuModel("Container", "menu", "container"),
-    new MenuModel("Grid", "menu", "grid"),
-    new MenuModel("Ads", "menu", "ads"),
-    new MenuModel("Title", "menu", "title"),
-    new MenuModel("Card", "menu", "card"),
-    new MenuModel("List", "menu", "list"),
+    new MenuGeneratorModel("Header", "menu", "header"),
+    new MenuGeneratorModel("Text", "menu", "text"),
+    new MenuGeneratorModel("Container", "menu", "container"),
+    new MenuGeneratorModel("Grid", "menu", "grid"),
+    new MenuGeneratorModel("Ads", "menu", "ads"),
+    new MenuGeneratorModel("Title", "menu", "title"),
+    new MenuGeneratorModel("Card", "menu", "card"),
+    new MenuGeneratorModel("List", "menu", "list"),
+    new MenuGeneratorModel("Separator", "menu", "separator"),
 ];
 export const settingsMenuLayouts = [
-    new MenuModel("Form", "menu","form"),
-    new MenuModel("Aside", "menu","aside"),
-    new MenuModel("Dashboard", "menu","dashboard"),
-    new MenuModel("Carousel", "menu","carousel"),
+    new MenuGeneratorModel("Form", "menu","form"),
+    new MenuGeneratorModel("Aside", "menu","aside"),
+    new MenuGeneratorModel("Dashboard", "menu","dashboard"),
+    new MenuGeneratorModel("Carousel", "menu","carousel"),
 ];
 
 export const API = "http://localhost:3000/api";
